@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="860.0" text="lifegame" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="525.0" prefWidth="579.0">
+         <children>
+            <Canvas fx:id="mainCanvas" height="500.0" layoutX="9.0" layoutY="7.0" onMouseClicked="#clickCanvas" onMouseDragged="#clickCanvas" width="840.0" />
+            <ButtonBar layoutX="378.0" layoutY="533.0" prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                  <Button fx:id="gliderButton" mnemonicParsing="false" onMouseClicked="#glider" text="glider" />
+                  <Button fx:id="colButton" mnemonicParsing="false" onMouseClicked="#column" text="col" />
+                  <Button fx:id="reproduceButton" mnemonicParsing="false" onMouseClicked="#reproduce" text="reproduce" />
+                  <Button fx:id="randomButton" mnemonicParsing="false" onMouseClicked="#random" text="random" />
+              </buttons>
+            </ButtonBar>
+            <ButtonBar layoutX="7.0" layoutY="542.0" prefHeight="40.0" prefWidth="136.0">
+               <buttons>
+                  <Button fx:id="startButton" minWidth="48.0" mnemonicParsing="false" onMouseClicked="#start" prefHeight="24.0" text="start" />
+                  <Button fx:id="stopButton" mnemonicParsing="false" onMouseClicked="#stop" prefHeight="0.0" prefWidth="111.0" text="end" />
+                  <Button mnemonicParsing="false" onMouseClicked="#clearOnClick" text="clear" />
+               </buttons>
+            </ButtonBar>
+            <ButtonBar layoutX="380.0" layoutY="573.0" prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button mnemonicParsing="false" onMouseClicked="#gliderGun" text="glider_gun" />
+              </buttons>
+            </ButtonBar>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
